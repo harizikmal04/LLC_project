@@ -1,0 +1,298 @@
+/* Basic reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh; /* Ensure minimum height of viewport */
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+}
+
+/* Header styling */
+header {
+  background-color: #0033cc;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Container styling */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1; /* Grow container to fill available vertical space */
+}
+
+/* Sidebar styling */
+.sidebar {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar img {
+  width: 100%;
+  max-width: 400px; /* Set maximum width for the images */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Move the left image further left */
+.sidebar-left {
+  position: relative;
+}
+
+.sidebar-left img {
+  position: absolute;
+  left: -100px; /* Adjust this value as needed */
+}
+
+/* Move the right image further right */
+.sidebar-right {
+  position: relative;
+}
+
+.sidebar-right img {
+  position: absolute;
+  right: -100px; /* Adjust this value as needed */
+}
+
+/* Main content styling */
+.main-content {
+  flex: 2;
+  padding: 20px;
+}
+
+/* Search section styling */
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.search-section input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.search-section button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #0033cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-section button:hover {
+  background-color: #002699;
+}
+
+.search-section button i {
+  font-size: 1.2rem;
+}
+
+#add-word-button {
+  margin-top: 10px; /* Add margin to separate the buttons */
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0033cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#add-word-button:hover {
+  background-color: #002699;
+}
+
+/* Result container styling */
+#result-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+#result-container h2 {
+  color: #0033cc;
+  margin-bottom: 10px;
+}
+
+/* Word list section styling */
+#word-list-section {
+  margin-top: 40px;
+}
+
+#word-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#word-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#word-list li button {
+  background-color: #0033cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+#word-list li button:hover {
+  background-color: #002699;
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#edit-word-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#save-edit-button {
+  background-color: #0033cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#save-edit-button:hover {
+  background-color: #002699;
+}
+
+/* Footer styling */
+footer {
+  background-color: #0033cc;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.footer-bottom {
+  background-color: #002699;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+.back-icon {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.back-icon i {
+  margin-right: 8px;
+}
+
+.back-icon:hover {
+  text-decoration: underline;
+}

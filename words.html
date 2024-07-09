@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favourite Word</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Favourite Word</h1>
+    <a href="index.html" class="back-icon"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+  </header>
+
+  <div class="container">
+    <div class="main-content">
+      <div id="word-list-section">
+        <h3>Words of the Day</h3>
+        <!-- The word list will be dynamically created by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <div id="edit-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2>Edit Word</h2>
+      <input type="text" id="edit-word-input">
+      <button id="save-edit-button">Save</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Language Learning Companion, Inc.</p>
+      <p><a href="#">Terms & Privacy</a> | <a href="#">Manage Privacy Settings</a> | <a href="#">Do Not Sell</a></p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="words.js"></script>
+</body>
+</html>

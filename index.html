@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Learning Companion</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:; font-src 'self' https://cdnjs.cloudflare.com; connect-src 'self' https://api.dictionaryapi.dev; media-src 'self' https://api.dictionaryapi.dev;">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Language Learning Companion</h1>
+  </header>
+
+  <div class="container">
+    <div class="sidebar sidebar-left">
+      <img src="h1.png" alt="Decorative Image Left">
+    </div>
+
+    <div class="main-content">
+      <div class="search-section">
+        <input type="text" id="word-input" placeholder="Enter a word" aria-label="Enter a word">
+        <button id="search-button" aria-label="Search"><i class="fas fa-search"></i></button>
+      </div>
+      <button id="add-word-button" class="add-button">Add to Favorite List</button>
+      <div id="result-container"></div>
+      <div id="word-list-section">
+        <h3>Favorite Words</h3>
+        <!-- No <ul id="word-list"> here -->
+        <a href="words.html">View all Favorite Words</a>
+      </div>
+    </div>
+
+    <div class="sidebar sidebar-right">
+      <img src="h2.png" alt="Decorative Image Right">
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Language Learning Companion, Inc.</p>
+      <p><a href="#">Terms & Privacy</a> | <a href="#">Manage Privacy Settings</a> | <a href="#">Do Not Sell</a></p>
+      <nav class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
